@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    min-height: 199vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#taskInput {
+    height: 40px;
+    width: 300px;
+    margin-top: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}

@@ -1,0 +1,11 @@
+Project Params
+
+UI: List of tasks to do in middle of screen, each task has an edit and delete button. Can check off task via clicking it, completed tasks are sent to the bottom of the list. 
+3 seperate lists of tasks: Overall, today, this week. 
+new task form should popup within the window, like a popup. 
+
+tasks should be ordered in the first in last out principal (newest task shouold be at top of list)
+
+maybe a cool animation when tasks are completed / deleted?
+
+site should be responsive 
