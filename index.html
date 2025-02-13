@@ -13,24 +13,29 @@
 
 <body>
     <div id="container1" class="container">
-        <button id="openNewTaskMenuButton" class="openNewTaskMenuButton">+New Task</button>
+        <button id="openNewTaskMenuButton" class="openNewTaskMenuButton" onclick="toggleTaskInputPopup()">+New
+            Task</button>
         <div class="sections">
         </div>
-        <div class="taskInput">
-            <input id="taskInput" type="text" placeholder="What needs to get done?" autocomplete="off">
-            <label for="taskDate">When?</label>
-            <input type="date" id="taskDate">
-            <button id="submitButton" class="submitButton" type="submit" onclick="addTask()">+</button>
-        </div>
-        <div class="tasks">
+        <div id="tasks" class="tasks">
             <ul id="taskList">
+                <li class="task" id="2"><input type="checkbox">Run Due:2025-02-12<button>Delete Task</button></li>
+                <li class="task" id="3"><input type="checkbox">Eat Due:2025-02-12<button>Delete Task</button></li>
+                <li class="task" id="4"><input type="checkbox">Walk Goldfish Due:2025-02-12<button>Delete Task</button>
+                </li>
             </ul>
             <ul id="completedTasks">
             </ul>
         </div>
     </div>
-    <div id="newTaskPopup" class="container2">
-        
+    <div id="newTaskPopup" class="container2 hidden">
+        <div id="overlay" class="overlay"></div>
+        <div id="newTaskForm" class="taskForm">
+            <input id="taskInput" type="text" placeholder="What needs to get done?" autocomplete="off">
+            <label for="taskDate">When?</label>
+            <input type="date" id="taskDate">
+            <button id="submitButton" class="submitButton" type="submit" onclick="addTask()">+</button>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>

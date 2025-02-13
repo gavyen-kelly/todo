@@ -9,3 +9,4 @@ tasks should be ordered in the first in last out principal (newest task shouold 
 maybe a cool animation when tasks are completed / deleted?
 
 site should be responsive 
+

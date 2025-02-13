@@ -1,11 +1,14 @@
+
 const taskInput = document.getElementById("taskInput")
 const submitTaskButton = document.getElementById("submitButton")
 const taskDueDate = document.getElementById("taskDate")
 const taskList = document.getElementById("taskList")
 const newTaskButton = document.getElementById("openNewTaskMenuButton")
 const completedTaskList = document.getElementById("completedTasks")
-let numOfTasks = 0
+const taskPopupPage = document.getElementById("newTaskPopup")
+const tasks = document.getElementById('tasks')
 
+let numOfTasks = 0
 const addTask = () => {
     let newTaskInput = taskInput.value
     let newTaskDueDate = taskDueDate.value
@@ -38,6 +41,7 @@ const addTask = () => {
     newTask.appendChild(newTaskDeleteButton)
     taskInput.value = ''
     taskDueDate.value = ''
+    taskPopupPage.classList.add('hidden')
     return taskList.appendChild(newTask)
 }
 
@@ -56,3 +60,11 @@ const completeTask = (taskId, taskIdBox) => {
         taskList.appendChild(task)
     }
 }
+
+const toggleTaskInputPopup = () => {
+    taskPopupPage.classList.remove('hidden')
+}
+const overlay = popupContainer.querySelector('.overlay');
+overlay.addEventListener('click', (e) => {
+    e.stopPropagation();
+});
