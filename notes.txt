@@ -4,9 +4,16 @@ UI: List of tasks to do in middle of screen, each task has an edit and delete bu
 3 seperate lists of tasks: Overall, today, this week. 
 new task form should popup within the window, like a popup. 
 
-tasks should be ordered in the first in last out principal (newest task shouold be at top of list)
+tasks should be ordered in the first in first out principal (newest task shouold be at bottom of list)
 
 maybe a cool animation when tasks are completed / deleted?
 
 site should be responsive 
 
+To Do for the To Do project:
+- Style the task lists / style primary page 
+- create the 3 tabs for Today, Inbox, and This week
+- Style tabs
+- finish styling touches
+- input validation 
+Goal for finish is 3/10 

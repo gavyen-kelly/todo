@@ -16,17 +16,17 @@
         <button id="openNewTaskMenuButton" class="openNewTaskMenuButton" onclick="toggleTaskInputPopup()">+New
             Task</button>
         <div class="sections">
+            <button id="tabAllTasks" class="tabLinks">All Tasks</button>
+            <button id="tabToday" class="tabLinks">Today</button>
+            <button id="tabWeek" class="tabLinks">This Week</button>
         </div>
-        <div id="tasks" class="tasks">
-            <ul id="taskList">
-                <li class="task" id="2"><input type="checkbox">Run Due:2025-02-12<button>Delete Task</button></li>
-                <li class="task" id="3"><input type="checkbox">Eat Due:2025-02-12<button>Delete Task</button></li>
-                <li class="task" id="4"><input type="checkbox">Walk Goldfish Due:2025-02-12<button>Delete Task</button>
-                </li>
-            </ul>
-            <ul id="completedTasks">
-            </ul>
-        </div>
+            <div id="tasks" class="tasks">
+                <ul id="taskList">
+                    </li>
+                </ul>
+                <ul id="completedTasks">
+                </ul>
+            </div>
     </div>
     <div id="newTaskPopup" class="container2 hidden">
         <div id="overlay" class="overlay"></div>
@@ -34,7 +34,7 @@
             <input id="taskInput" type="text" placeholder="What needs to get done?" autocomplete="off">
             <label for="taskDate">When?</label>
             <input type="date" id="taskDate">
-            <button id="submitButton" class="submitButton" type="submit" onclick="addTask()">+</button>
+            <button id="submitButton" class="submitButton" type="submit" onclick="submitTaskInfo()">+</button>
         </div>
     </div>
     <script src="script.js"></script>

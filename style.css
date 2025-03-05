@@ -5,7 +5,8 @@ html {
 
 body {
     margin: 0;
-    min-height: 199vh;
+    min-height: 100vh;
+    background-color: grey;
 }
 
 .container {
@@ -20,7 +21,25 @@ body {
     height: 40px;
     width: 300px;
     margin-top: 20px;
+}
 
+.sections {
+    color: green;
+    margin: 0;
+    padding: 0;
+}
+
+.tasks {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column wrap;
+    background-color: red;
+    height: 75vh;
+    width: 65vh;
+}
+.task {
+    margin
 }
 
 ul {
